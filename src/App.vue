@@ -1,20 +1,11 @@
 <script setup>
-import MyHello from './components/MyHello.vue'
+import MainHeader from './components/MainHeader.vue'
 </script>
 
 <template>
-  <div class="wrapper">
-    <MyHello title="Кроссовки Puma" :price="8228" />
-    <MyHello />
-    <MyHello />
+  <div class="bg-white w-4/5 m-auto h-screen rounded-xl shadow-2xl mt-14">
+    <MainHeader />
   </div>
 </template>
 
-<style>
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-</style>
+<style></style>
