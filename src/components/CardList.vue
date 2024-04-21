@@ -1,5 +1,9 @@
 <script setup>
 import SneakerCard from './SneakerCard.vue'
+
+const onClickAdd = () => {
+  alert("test")
+}
 </script>
 
 <template>
@@ -7,11 +11,10 @@ import SneakerCard from './SneakerCard.vue'
     <SneakerCard
       title="Мужские кроссовки Nike Blazer Mid Suede"
       imageUrl="/sneakers/sneakers-1.jpg"
+      :price="12500"
+      :is-added="false"
+      :is-favorite="false"
+      :onClickAdd="onClickAdd"
     />
-    <SneakerCard />
-    <SneakerCard />
-    <SneakerCard />
-    <SneakerCard />
-    <SneakerCard />
   </div>
 </template>
